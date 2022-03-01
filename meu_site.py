@@ -20,6 +20,7 @@ def contatos():
 def usuarios(nome_usuario):
     return render_template("usuarios.html", nome_usuario=nome_usuario)
 
+#fera
 
 #colocar o site no ar
 if __name__ == "__main__":
