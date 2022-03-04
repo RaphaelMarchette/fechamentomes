@@ -1,0 +1,23 @@
+#fundo {
+  opacity: 0.8;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#modal {
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+  display: none;
+}

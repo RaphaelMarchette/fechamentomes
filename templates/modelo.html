@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<title>RX 2022 | Início</title>
+	<link rel="shortcut icon" href="/static/imagens/Imagens_Operacao/maquina_transp.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/css/site.css" />
+    <link rel="stylesheet" href="/static/css/rx.css" />
+    {% block estilos %}{% endblock %}
+    <script src="/static/scripts/menu.js" defer></script>
+    {% block scripts %}{% endblock %}
+</head>
+
+<body>
+
+    <header>
+
+        <img alt="maquina" class="maq" src="/static/imagens/Imagens_Operacao/maquina_transp.png" />
+    
+        <img alt="logo_rx" class="logo_rx" src="/static/imagens/Imagens_Operacao/rx_transp.png" />
+    
+        <a class="logo_rx_cnc">CNC Machining</a>
+        {% block header %}{% endblock %}
+
+        {% if session.usuario %}
+            <a class="botao acesso enviar" href="/admin">Admin</a>
+            <a class="botao limpar" href="/sair">Sair</a>
+        {% else %}
+            <a class="botao acesso" href="/entrar">Entrar</a>
+        {% endif %}
+            <a class="menu-icone" href="#"></a>
+
+    </header>
+
+    <main>
+        {% block conteudo %}{% endblock %}
+    </main>
+
+    <footer>
+        <p> RX 2022 CNC machining solutions</p>
+        <ul class="media-list">
+            <li>
+                <a class="media-link facebook" href="https://www.facebook.com/FacImpacta/" target="blank">Facebook</a>
+            </li>
+            <li>
+                <a class="media-link instagram" href="https://www.instagram.com/faculdadeimpacta/" target="blank">Instagram</a>
+            </li>
+            <li>
+                <a class="media-link linkedin" href="https://www.linkedin.com/edu/faculdade-impacta-tecnologia-161006/" target="blank">Linkedin</a>
+            </li>
+            <li>
+                <a class="media-link twitter" href="https://twitter.com/facimpacta/" target="blank">Twitter</a>
+            </li>
+            <li>
+                <a class="media-link youtube" href="https://www.youtube.com/user/GrupoImpacta/" target="blank">Youtube</a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+
+</html>

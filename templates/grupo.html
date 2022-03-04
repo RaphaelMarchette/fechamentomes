@@ -1,0 +1,32 @@
+{% extends 'modelo.html' %}
+
+{% block titulo %} {{grupo.group_name}} {% endblock %}
+
+{% block estilos %}
+    <link rel="stylesheet" href="/static/css/cursos.css" />
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/scripts/cursos.js" defer></script>
+{% endblock %}
+
+{% block conteudo %}
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Tempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grupo in grupos_menu %}
+            <tr>
+                <td>{{grupo.group_name}}</td>
+                <td>{{grupo.group_time}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

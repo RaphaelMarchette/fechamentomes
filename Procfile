@@ -1,1 +1,1 @@
-web:node src/sever.js
+web: gunicorn app:app

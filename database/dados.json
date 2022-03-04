@@ -1,0 +1,111 @@
+{
+    "groups": [
+        {
+            "group_name"    :  "LADO_1",
+            "group_time"    :  "2:40"
+        }, {
+            "group_name"    :  "LADO_2",
+            "group_time"    :  "1:30"
+        }
+    ],
+    "geos": [
+        {
+            "geo_name"          :  "MCS_LADO_1",
+            "geo_x"             :  "50,90",
+            "geo_y"             :  "100,0",
+            "geo_z"             :  "30,45"
+        }, {
+            "geo_name"          :  "MCS_LADO_2",
+            "geo_x"             :  "0,30",
+            "geo_y"             :  "2,15",
+            "geo_z"             :  "88,0"
+        }
+    ],
+    "tools": [
+        {
+            "tool_tipy"          :  "THREAD_MILL",
+            "tool_name"          :  "T_Rosca_D20.3_3F",
+            "tool_diamiter"      :  "20.3",
+            "tool_height"        :  "70",
+            "tool_number"        :  "7",
+            "tool_n_inserts"     :  "1",
+            "tool_angle"         :  "60"
+        }, {
+            "tool_tipy"          :  "MILL",
+            "tool_name"          :  "DESB_D20_3F",
+            "tool_diamiter"      :  "20",
+            "tool_height"        :  "65",
+            "tool_number"        :  "8",
+            "tool_n_inserts"     :  "3",
+            "tool_angle"         :  "90"
+        }, {
+            "tool_tipy"          :  "THREAD_MILL",
+            "tool_name"          :  "T_Rosca_D60.9_2F",
+            "tool_diamiter"      :  "60.9",
+            "tool_height"        :  "75",
+            "tool_number"        :  "1",
+            "tool_n_inserts"     :  "4",
+            "tool_angle"         :  "90"
+        }, {
+            "tool_tipy"          :  "THREAD_MILL",
+            "tool_name"          :  "T_Rosca_D50.5_5F",
+            "tool_diamiter"      :  "50.5",
+            "tool_height"        :  "100",
+            "tool_number"        :  "2",
+            "tool_n_inserts"     :  "8",
+            "tool_angle"         :  "90"
+        }
+    ],
+    "opers":[
+        {
+            "oper_tipy"         :	"THREAD_MILL",
+            "oper_name"	        :	"ROSCA_INT",
+            "oper_limits_coord" :   "[['X', 'Y', 'Z', 'R','D'], [50, 20, 10, 0, 123], [70, 30, 15, 0, 88] ]",
+            "oper_z_init"	    :	"oper_z_coord",
+            "oper_mod_select"	:	"Close",
+            "oper_side_tool"	:	"Inside",
+            "oper_dmt_maior"	:	"oper_d_coord",
+            "oper_dmt_menor"	:	"oper_d_coord",
+            "oper_z_finish"	    :	"54",
+            "oper_pas_add"	    :	"10"	,
+            "oper_side_incr"	:	"0.2",
+            "oper_side_estoq"	:	"0.2",
+            "oper_z_incr"       :   "10",
+            "oper_thread_pitch"	:	"8.47",
+            "oper_engate"	    :	"Ponto",
+            "oper_retrair"	    :	"oper_engate",
+            "oper_z_sob"	    :	"123",
+            "oper_z_transf"	    :	"3",
+            "oper_speed_spindle":	"163",
+            "oper_speed_cutting":	"0.25"
+        },
+        {
+            "oper_tipy"         :	"MILL",
+            "oper_name"	        :	"DEBASTE",
+            "oper_limits_coord" :   "[['X', 'Y', 'Z', 'R','D'], [50, 20, 10, 0, 123], [70, 30, 15, 0, 88] ]",
+            "oper_z_init"	    :	"oper_z_coord",
+            "oper_mod_select"	:	"Close",
+            "oper_side_tool"	:	"Inside",
+            "oper_dmt_maior"	:	"oper_d_coord",
+            "oper_dmt_menor"	:	"oper_d_coord",
+            "oper_z_finish"	    :	"54",
+            "oper_pas_add"	    :	"10"	,
+            "oper_side_incr"	:	"0.2",
+            "oper_side_estoq"	:	"0.2",
+            "oper_z_incr"       :   "10",
+            "oper_thread_pitch"	:	"8.47",
+            "oper_engate"	    :	"Ponto",
+            "oper_retrair"	    :	"oper_engate",
+            "oper_z_sob"	    :	"123",
+            "oper_z_transf"	    :	"3",
+            "oper_speed_spindle":	"163",
+            "oper_speed_cutting":	"0.25"
+        }
+    ],
+    "gerar":[
+        {
+            "nome_arquivo" : "000190"
+        }
+    ]
+}
+
