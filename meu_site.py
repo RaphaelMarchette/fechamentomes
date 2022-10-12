@@ -1,16 +1,13 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
-#criar a 1 pagina do site
-# route -> hasfdsf.com/contatos
-#funcao -> o que voce quer exibir naquela página
+# route -> hashtagtreinamentos.com/
+# função -> o que você quer exibir naquela página
 # template
 
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
-
 
 @app.route("/contatos")
 def contatos():
@@ -20,10 +17,9 @@ def contatos():
 def usuarios(nome_usuario):
     return render_template("usuarios.html", nome_usuario=nome_usuario)
 
-#fera
-
-#colocar o site no ar
+# colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)
 
-    
+    # servidor do heroku
+
